@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GoMap</string>
+    <string name="token">pk.eyJ1IjoibmVlbHBhdGVsNjI5NCIsImEiOiJjanowYzhpNXcwYXhqM212cHlmcW5qa3J0In0.4rZghnX4mvkCXDSU1RUEjQ</string>
+    <string name="location">Locations</string>
+</resources>

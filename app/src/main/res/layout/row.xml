@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+    <RelativeLayout
+            android:id="@+id/drop"
+            android:layout_width="48dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true">
+
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_action_name"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:layout_marginStart="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:id="@+id/locationName"
+            android:textSize="14sp"/>
+
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+            android:id="@+id/expand"
+            android:orientation="vertical"
+            android:layout_below="@id/locationName"
+            android:layout_height="wrap_content"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            android:layout_width="match_parent">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/description"
+                android:layout_marginTop="0dp"/>
+
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+</RelativeLayout>
